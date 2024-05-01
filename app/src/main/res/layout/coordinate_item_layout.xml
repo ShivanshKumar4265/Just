@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_3sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:elevation="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:background="@drawable/item_background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_historyItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv_momentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Moment Name"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:id="@+id/tv_historyDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_momentName"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="22-01-24"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_momentName"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toStartOf="@+id/tv_historyDistanceDigit"
+            android:text="Total Distance : "
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tv_historyDistanceDigit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_momentName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="20 KM"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_historyDate"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="From: " />
+
+        <TextView
+            android:id="@+id/tv_fromData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_historyDate"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toEndOf="@id/tv_from"
+            android:text="From" />
+
+        <TextView
+            android:id="@+id/tv_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_historyDate"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toStartOf="@id/tv_toData"
+            android:text="To: " />
+
+        <TextView
+            android:id="@+id/tv_toData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_historyDate"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Todfdsfsdsdfsdf" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
